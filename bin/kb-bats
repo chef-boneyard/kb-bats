@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -e
+[ -n "$KB_DEBUG" ] && set -x
+
+kb-suite-prepare bats
+
+$(kb-vendorpath bats)/bin/bats $(kb-suitepath bats)

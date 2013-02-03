@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-set -e
-[ -n "$JR_DEBUG" ] && set -x
-
-jr-suite-prepare bats
-
-$(jr-vendorpath bats)/bin/bats $(jr-suitepath bats)
